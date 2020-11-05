@@ -81,13 +81,6 @@ f.write("Continent\tTotal Case\tNew Case\tTotal Deaths\tNew Deaths\tTotal Recove
 ```
 
 
-
-
-    167
-
-
-
-
 ```python
 # Clear HTML tag and assign to text textall
 results = []                               # Initialize array results
@@ -128,12 +121,6 @@ results = text.split("\n")                               # Create result arrays 
 results.pop()                                            # To remove the last item from the list            
 results.pop()                                            # To remove the last item from the list
 ```
-
-
-
-
-    ''
-
 
 
 Get the data Continent, Total Case, New Case, Total Deaths, New Deaths, Total Recovered, Active Case, Serious, Critical, Tot Cases/1M pop, Deaths/1M pop, Total Tests, Tests/1M pop and Population
