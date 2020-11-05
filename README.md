@@ -219,8 +219,3 @@ for element in results:  # Iterate over the results array
 # Close file
 f.close()
 ```
-
-
-```python
-
-```
