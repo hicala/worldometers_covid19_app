@@ -11,6 +11,8 @@
 # 
 # The data I used came from Coronavirus Update from COVID-19 Virus Pandemic - Worldometer. Reference:https://www.worldometers.info/coronavirus/#page-top
 # 
+# ![Home Page](images/home.png)
+# 
 # ## Main goal
 # 
 # + To access all of the content from the source code of the webpage with Python
@@ -35,6 +37,10 @@
 # ## Data info extracted:
 # 
 # Continent, Total Case, New Case, Total Deaths, New Deaths, Total Recovered, Active Case, Serious, Critical, Tot Cases/1M pop, Deaths/1M pop, Total Tests, Tests/1M pop and Population of the Coronavirus Update from COVID-19 Virus Pandemic - Worldometer
+# 
+# ![Worldometer](images/Worldometer.png)
+
+# If you don't have Beautiful Soup, install with 'conda install beautifulsoup' in terminal.
 # 
 # Python requires us to explicitly load the libraries that we want to use:
 
@@ -87,6 +93,8 @@ data = soup.findAll(attrs={'class':['total_row_world']})
 f = open('worldometers_covid19_continents.csv','w') # open new file, make sure path to your data file is correct
 f.write("Continent\tTotal Case\tNew Case\tTotal Deaths\tNew Deaths\tTotal Recovered\tActive Case\tSerious, Critical\tTot Cases/1M pop\tDeaths/1M pop\tTotal Tests\tTests/1M pop\tPopulation" + "\n") # write headers
 
+
+# ![Source Code HTML](images/code.png)
 
 # In[6]:
 
@@ -231,8 +239,10 @@ for element in results:  # Iterate over the results array
 f.close()
 
 
-# In[ ]:
+# ![cvs data](images/cvs.png)
 
-
-
-
+# ## Conclusiones
+# 
+# We used Beautiful Soup as the main tool. The major concept with Beautiful Soup is that it allows you to access elements of your page by following the CSS structures, such as grabbing all links, all headers, specific classes, or more. It is a powerful library.
+# 
+#  Once we grab elements, Python makes it easy to write the elements or relevant components of the elements into other files, such as a CSV, that can be stored in a database or opened in other software.
