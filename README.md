@@ -87,12 +87,6 @@ f.write("Continent\tTotal Case\tNew Case\tTotal Deaths\tNew Deaths\tTotal Recove
 ```
 
 
-
-
-    167
-
-
-
 ![Source Code HTML](images/code.png)
 
 
@@ -136,12 +130,6 @@ results = text.split("\n")                               # Create result arrays 
 results.pop()                                            # To remove the last item from the list            
 results.pop()                                            # To remove the last item from the list
 ```
-
-
-
-
-    ''
-
 
 
 Get the data Continent, Total Case, New Case, Total Deaths, New Deaths, Total Recovered, Active Case, Serious, Critical, Tot Cases/1M pop, Deaths/1M pop, Total Tests, Tests/1M pop and Population
@@ -248,13 +236,3 @@ f.close()
 We used Beautiful Soup as the main tool. The major concept with Beautiful Soup is that it allows you to access elements of your page by following the CSS structures, such as grabbing all links, all headers, specific classes, or more. It is a powerful library.
 
  Once we grab elements, Python makes it easy to write the elements or relevant components of the elements into other files, such as a CSV, that can be stored in a database or opened in other software.
-
-
-```python
-
-```
-
-
-```python
-
-```
